@@ -1,4 +1,4 @@
-Dear Reviewer, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional code (as well as the original code) for reproducing the results from paper. 
+Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional code (as well as the original code) for reproducing the results from paper. 
 # Report
 Here we report the extra experiments.
 ## ColoredMNIST
