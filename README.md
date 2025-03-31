@@ -50,9 +50,28 @@ We follow the dataset creation from [1], and conduct 160 Bayesian Hyperparameter
 #### GroupDRO
 {"lr": 10^[-5, -3], "eta": 10^[-4,-1], "weight_decay": 10^[-4, -2]}}
 
-## Waterbirds-CF
-Waterbirds is first introduced in GroupDRO[3]. In the dataset during training, waterbirds are highly correlated to waterbirds background 
 
+## Waterbirds-CF
+Waterbirds is first introduced in GroupDRO[3]. Waterbirds are highly correlated to the background in the training domains but not in the test domain. In this version, we switch the minority group samples (waterbirds on land and landbirds on water) in the original Waterbirds dataset to the counterfactual samples (Corresponding to one same bird in the training domain while only different in the backgrounds.)
+
+
+### Experiment Setting
+The hyperparamter is selected according to the corresponding best model parameter reported.
+#### CMP
+{"lr": 10^[-5, -3], "penalty_weight": 10^[0,5], "r": 2^[4,8]}
+#### ERM
+{"lr": 10^[-5, -3]}
+#### IRM
+{"lr": 10^[-5, -3], "penalty_weight": 10^[0, 5], "penalty_anneal_iters": [50, 250], "weight_decay": 10^[-4, -2]}
+#### REx
+{"lr": 10^[-5, -3], "penalty_weight": 10^[0, 5], "penalty_anneal_iters": [50, 250], "weight_decay": 10^[-4, -2]}
+#### Fish
+{"lr": 10^[-5, -3], "fish_step": 10^[-4,-1], "weight_decay": 10^[-4, -2]}}
+#### GroupDRO
+{"lr": 10^[-5, -3], "eta": 10^[-4,-1], "weight_decay": 10^[-4, -2]}}
+
+## CelebA-CF
+CelebA as a 
 TODO: Here.
 ### Experiment Setting
 The hyperparamter is selected according to the corresponding best model parameter reported.
@@ -69,8 +88,9 @@ The hyperparamter is selected according to the corresponding best model paramete
 #### GroupDRO
 {"lr": 10^[-5, -3], "eta": 10^[-4,-1], "weight_decay": 10^[-4, -2]}}
 
+
 # Reproduce our results.
-First please use conda to install the env from ```requirements.txt```.
+Install the environment from ```requirements.txt```.
 <img src="[![CleanShot 2025-03-29 at 14 26 06@2x](https://github.com/user-attachments/assets/e4b9bcf7-51aa-4b79-8d8c-f9a6724e3514)
 ](https://github.com/user-attachments/assets/e4b9bcf7-51aa-4b79-8d8c-f9a6724e3514)" width="300" height="200">
 
@@ -79,5 +99,6 @@ First please use conda to install the env from ```requirements.txt```.
 [1] Arjovsky, Martin, et al. "Invariant risk minimization." arXiv preprint arXiv:1907.02893 (2019).
 
 [2] Salaudeen, Olawale Elijah, Nicole Chiou, and Sanmi Koyejo. "On Domain Generalization Datasets as Proxy Benchmarks for Causal Representation Learning." NeurIPS 2024 Causal Representation Learning Workshop.
+
 
 [3] Sagawa, Shiori, et al. "Distributionally robust neural networks for group shifts: On the importance of regularization for worst-case generalization." arXiv preprint arXiv:1911.08731 (2019).
