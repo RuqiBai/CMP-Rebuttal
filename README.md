@@ -57,8 +57,8 @@ Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the o
 
 
 ## Ablation Study
+Will be ready soon...
 ### Sensitivity on $r$
 ### Sensitivity on the Noise in Counterfactual Pairs
 ### Sensitivity on the Number of Counterfactual Pairs
-# Reproduce our results.
-Install the environment from ```requirements.txt```.
+
