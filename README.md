@@ -32,7 +32,8 @@ Here we report the extra experiments.
 Figure 1: ColoredMNIST using the Linear model. Notice that IRM and REx are significantly osillated but the accuracy between training domains and test domains are inverse related.
 ![CleanShot 2025-03-31 at 21 25 33@2x](https://github.com/user-attachments/assets/b69ca6b8-c318-4b9d-8a61-00241558964e)
 Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the one used in DomainBed. 
-
+![CleanShot 2025-04-01 at 03 08 53@2x](https://github.com/user-attachments/assets/a0e9d003-1df0-4739-9c3b-9b30dbb287c3)
+Figure 2: ColoredMNIST using the Clip pretrained model + Linear Classifier. As we can see, our method is still the only one reaches to 70% accuracy, close to oracle performance (73%) with stable convergecne behaviour.
 
 ## 2. Waterbirds-CF
 |               | Methods | In-domain validation & stopping criteria |              | Oracle validation & stopping criteria |              |
