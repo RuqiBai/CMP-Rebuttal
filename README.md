@@ -33,7 +33,7 @@ Figure 1: ColoredMNIST using the Linear model. Notice that IRM and REx are signi
 ![CleanShot 2025-03-31 at 21 25 33@2x](https://github.com/user-attachments/assets/b69ca6b8-c318-4b9d-8a61-00241558964e)
 Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the one used in DomainBed. 
 ![CleanShot 2025-04-01 at 03 08 53@2x](https://github.com/user-attachments/assets/a0e9d003-1df0-4739-9c3b-9b30dbb287c3)
-Figure 2: ColoredMNIST using the Clip pretrained model + Linear Classifier. As we can see, our method is still the only one reaches to 70% accuracy, close to oracle performance (73%) with stable convergecne behaviour.
+Figure 3: ColoredMNIST using the Clip pretrained model + Linear Classifier. As we can see, our method is still the only one reaches to 70% accuracy, close to oracle performance (73%) with stable convergecne behaviour.
 
 ## 2. Waterbirds-CF
 |               | Methods | In-domain validation & stopping criteria |              | Oracle validation & stopping criteria |              |
@@ -58,8 +58,11 @@ Figure 2: ColoredMNIST using the Clip pretrained model + Linear Classifier. As w
 
 
 ## Ablation Study
-Will be ready soon...
+
 ### Sensitivity on $r$
+![CleanShot 2025-04-01 at 15 26 32@2x](https://github.com/user-attachments/assets/a5e0a882-ac29-4fa3-abd9-fb112d677a5f)
+Figure 4: Sensitivity on $r$ of clip based linear Model on Waterbirds. The accuracy is on 320 random run with different learning rate from 1e-4 to 1e-2 and different $r$ from 2 to 512. The results show that the changing of $r$ is predicted by the theory. With large $r$ the average and worst-case accuracy is not as well and not as stable as smaller $r$, when $r$ reaches the best in domain accuracy around $r=30$, the worst-case accuracy is also reaches the maximum. When $r$ becomes smaller, the average accuracy stays same while the worst-case accuracy starts to degrade again due to overuse of spurious features.
 ### Sensitivity on the Noise in Counterfactual Pairs
+Will be ready soon...
 ### Sensitivity on the Number of Counterfactual Pairs
 
