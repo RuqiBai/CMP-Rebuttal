@@ -35,14 +35,26 @@ Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the o
 
 
 ## 2. Waterbirds-CF
+|               | Methods | In-domain validation & stopping criteria |              | Oracle validation & stopping criteria |              |
+|---------------|---------|------------------------------------------|--------------|---------------------------------------|--------------|
+|               |         | Test-Acc                                 | Ood Test-Acc | Test-Acc                              | Ood Test-Acc |
+| REx           | NN      | 0.924                                    | 0.744        | 0.917                                 | 0.855        |
+|               | Clip    | 0.891                                    | 0.617        | 0.878                                 | 0.729        |
+| Fish          | NN      | 0.904                                    | 0.699        | 0.872                                 | 0.843        |
+|               | Clip    | 0.900                                    | 0.744        | 0.869                                 | 0.805        |
+| GroupDRO      | NN      | 0.923                                    | 0.765        | 0.907                                 | 0.842        |
+|               | Clip    | 0.906                                    | 0.684        | 0.896                                 | 0.827        |
+| IRM           | NN      | 0.940                                    | 0.769        | 0.920                                 | 0.849        |
+|               | Clip    | 0.838                                    | 0.707        | 0.820                                 | 0.767        |
+| ERM           | NN      | 0.917                                    | 0.767        | 0.917                                 | 0.767        |
+|               | Clip    | 0.885                                    | 0.781        | 0.882                                 | 0.800        |
+| ERM+Upweight  | NN      | 0.936                                    | 0.856        | 0.936                                 | 0.856        |
+|               | Clip    | 0.889                                    | 0.795        | 0.882                                 | 0.829        |
+| Ours          | NN      | 0.953                                    | 0.872        | 0.953                                 | 0.872        |
+|               | Clip    | 0.900                                    | 0.774        | 0.870                                 | 0.853        |
+| Ours+Upweight | NN      | 0.958                                    | 0.900        | 0.958                                 | 0.900        |
+|               | Clip    | 0.864                                    | 0.812        | 0.854                                 | 0.860        |
 
-
-## 3 CelebA-CF
-
-
-### 3.2 Results
-
-### 3.3 Convergence Curve
 
 ## Ablation Study
 ### Sensitivity on $r$
