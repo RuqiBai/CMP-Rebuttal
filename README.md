@@ -65,4 +65,5 @@ Figure 4: Sensitivity on $r$ of clip based linear Model on Waterbirds. The accur
 ### Sensitivity on the Noise in Counterfactual Pairs
 Will be ready soon...
 ### Sensitivity on the Number of Counterfactual Pairs
-
+![CleanShot 2025-04-01 at 19 21 25@2x](https://github.com/user-attachments/assets/0efa3e88-dc8c-46f7-937c-f1decbc5eeea)
+Figure 6: The number of counterfactual vs the DG accuracy on ColoredMNIST using Clip + Linear model, the results show that with 32 pairs of counterfactual, the counterfactual pairs are not enough to help model get rid of spurious features, thus lead to overfitting (check in-domain accuracy here is over 75%, meaning the classificaton utilizes the spurious feature.). When we have 128 or 256 pairs of counterfactuals, the performance increase significantly and stay stable compared to 32 counterfactual pairs.
