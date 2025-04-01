@@ -51,7 +51,7 @@ Figure 3: ColoredMNIST using the Clip pretrained model + Linear Classifier. As w
 |               | Clip    | 0.885                                    | 0.781        | 0.882                                 | 0.800        |
 | ERM+Upweight  | NN      | 0.936                                    | 0.856        | 0.936                                 | 0.856        |
 |               | Clip    | 0.889                                    | 0.795        | 0.882                                 | 0.829        |
-| CMP  (Ours)           | NN      | **0.953**                                    | 0.872       | 0.953                                | 0.872        |
+| CMP  (Ours)           | NN      | 0.953                                    | 0.872       | 0.953                                | 0.872        |
 |               | Clip    | 0.900                                    | 0.774        | 0.870                                | 0.853      |
 | CMP+Upweight (Ours) | NN      | **0.958**                                    | **0.900**       | **0.958**                                 | **0.900**        |
 |               | Clip    | **0.864**                                    | **0.812**        | **0.854**                                 | **0.860**        |
