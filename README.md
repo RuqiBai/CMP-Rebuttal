@@ -60,7 +60,7 @@ Figure 3: ColoredMNIST using the Clip pretrained model + Linear Classifier. As w
 ## Ablation Study
 
 ### Sensitivity on $r$
-![CleanShot 2025-04-01 at 15 26 32@2x](https://github.com/user-attachments/assets/a5e0a882-ac29-4fa3-abd9-fb112d677a5f)
+![CleanShot 2025-04-01 at 16 42 45@2x](https://github.com/user-attachments/assets/2505dc34-7b6a-4ce4-bcdc-f0fbbd84be4c)
 Figure 4: Sensitivity on $r$ of clip based linear Model on Waterbirds. The accuracy is on 320 random run with different learning rate from 1e-4 to 1e-2 and different $r$ from 2 to 512. The results show that the changing of $r$ is predicted by the theory. With large $r$ the average and worst-case accuracy is not as well and not as stable as smaller $r$, when $r$ reaches the best in domain accuracy around $r=30$, the worst-case accuracy is also reaches the maximum. When $r$ becomes smaller, the average accuracy stays same while the worst-case accuracy starts to degrade again due to overuse of spurious features.
 ### Sensitivity on the Noise in Counterfactual Pairs
 Will be ready soon...
