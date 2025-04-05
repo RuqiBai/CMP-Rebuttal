@@ -1,7 +1,9 @@
 Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional results.
 # Report
 ## Our practical algorithm
-![CleanShot 2025-04-05 at 14 00 19@2x](https://github.com/user-attachments/assets/8ee62d4d-17a2-43f3-a0ec-9558d8ece68c)
+![CleanShot 2025-04-05 at 14 07 52@2x](https://github.com/user-attachments/assets/4bfbc44a-9ea6-4740-9aa7-cc445660ab51)
+
+
 Algorithm 1: Our practical algorithm incorporates a structural constraint that forces the input x to be first projected onto the orthogonal complement of the subspace spanned by the columns of the left singular vectors from the 
 r-truncated SVD of the estimated counterfactual difference.
 Here we report the extra experiments.
@@ -33,10 +35,15 @@ Here we report the extra experiments.
 |                  | ERM Oracle      | 0.735                                    | 0.730        | 0.735                                 | 0.730        |
 
 ![CleanShot 2025-03-31 at 21 23 25@2x](https://github.com/user-attachments/assets/5c34d80d-144c-4254-b755-93fc8884f6ca)
+
 Figure 1: ColoredMNIST using the Linear model. Notice that IRM and REx are significantly osillated but the accuracy between training domains and test domains are inverse related.
+
 ![CleanShot 2025-03-31 at 21 25 33@2x](https://github.com/user-attachments/assets/b69ca6b8-c318-4b9d-8a61-00241558964e)
+
 Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the one used in DomainBed. 
+
 ![CleanShot 2025-04-01 at 03 08 53@2x](https://github.com/user-attachments/assets/a0e9d003-1df0-4739-9c3b-9b30dbb287c3)
+
 Figure 3: ColoredMNIST using the Clip pretrained model + Linear Classifier. As we can see, our method is still the only one reaches to 70% accuracy, close to oracle performance (73%) with stable convergecne behaviour.
 
 ## 2. Waterbirds-CF
