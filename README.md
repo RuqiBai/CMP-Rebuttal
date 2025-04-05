@@ -1,5 +1,9 @@
 Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional results.
 # Report
+## Our practical algorithm
+![CleanShot 2025-04-05 at 14 00 19@2x](https://github.com/user-attachments/assets/8ee62d4d-17a2-43f3-a0ec-9558d8ece68c)
+Algorithm 1: Our practical algorithm incorporates a structural constraint that forces the input x to be first projected onto the orthogonal complement of the subspace spanned by the columns of the left singular vectors from the 
+r-truncated SVD of the estimated counterfactual difference.
 Here we report the extra experiments.
 ## 1. ColoredMNIST
 
