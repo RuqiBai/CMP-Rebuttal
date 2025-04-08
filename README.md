@@ -1,7 +1,8 @@
 Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional results.
 # Report
 ## Our practical algorithm
-![CleanShot 2025-04-08 at 17 44 46@2x](https://github.com/user-attachments/assets/ed6d4667-0c9b-4e1e-b48e-d40d2754658c)
+![CleanShot 2025-04-08 at 17 47 45@2x](https://github.com/user-attachments/assets/9d5dc4c6-d68f-4700-ac1c-f5dea15f81f9)
+
 
 Algorithm 1: Our practical algorithm uses Projected Gradient Descent (PGD) to constrain the model parameters to lie within the invariant subspace. This is achieved by projecting the parameters onto the orthogonal complement of the subspace spanned by the columns of the left singular vectors from the r-truncated Singular Value Decomposition (SVD) of the estimated counterfactual difference.
 Here we report the extra experiments.
