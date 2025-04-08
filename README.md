@@ -9,7 +9,8 @@ Algorithm 1: Our practical algorithm uses Projected Gradient Descent (PGD) to co
 Here we report the extra experiments.
 
 ## 1. PACS
-Though no available counterfactual pairs, we could consider conditional paired 
+Table 1: Conditional pairs can be viewed as noisy counterfactual pairs. Using randomly generated conditional pairs, we achieve state-of-the-art (SoTA) performance on PACS with a pretrained CLIP (ViT-B/32) model and a linear classifier, evaluated using in-domain validation.
+
 | test domain |   A       |   C       |   P       |   S       |   Avg     |
 |-------------|-----------|-----------|-----------|-----------|-----------|
 | ERM         |   0.924   |   0.968   | **0.996** |   0.859   |   0.937   |
@@ -17,9 +18,12 @@ Though no available counterfactual pairs, we could consider conditional paired
 | REx         |   0.952   |   0.975   | **0.996** |   0.845   |   0.942   |
 | GroupDRO    |   0.941   |   0.975   | **0.996** |   0.843   |   0.939   |
 | Fish        |   0.934   |   0.970   | **0.996** |   0.837   |   0.934   |
-| MatchDG     |   0.923   |   0.973   |   0.973   |   0.836   |   0.926   |
-| ECMP        | **0.956** | **0.980** | **0.996** | **0.867** | **0.950** |
+| MatchDG+Conditional Pairing    |   0.923   |   0.973   |   0.973   |   0.836   |   0.926   |
+| CMP+Conditional Pairing        | **0.956** | **0.980** | **0.996** | **0.867** | **0.950** |
+
 ## 2. ColoredMNIST
+
+Table 2: ColoredMNIST Results with both in-domain validation and oracle validation stopping criteria. We achieve near oracle performance while others all fails to generalize.
 
 |                  | Methods         | In-domain validation & stopping criteria |              | Oracle validation & stopping criteria |              |
 |------------------|-----------------|------------------------------------------|--------------|---------------------------------------|--------------|
@@ -39,7 +43,7 @@ Though no available counterfactual pairs, we could consider conditional paired
 | ERM              | Linear          | 0.852                                    | 0.103        | 0.842                                 | 0.157        |
 |                  | NN              | 0.843                                    | 0.153        | 0.799                                 | 0.313        |
 |                  | Clip            | 0.852                                    | 0.093        | 0.753                                 | 0.253        |
-| CMP  (Ours)      | Linear          | 0.658                                    | 0.645        | 0.658                                 | 0.645        |
+| CMP  (Ours)     | Linear          | 0.658                                    | 0.645        | 0.658                                 | 0.645        |
 |                  | NN              | 0.737                                    | 0.675        | **0.721**                             | **0.691**    |
 |                  | Clip            | 0.742                                    | 0.694        | **0.734**                             | **0.711**    |
 | Na\’ive baseline | Random Guessing | 0.500                                    | 0.500        | 0.500                                 | 0.500        |
@@ -59,6 +63,8 @@ Figure 2: ColoredMNIST using the NN model. The NN structure is the same as the o
 Figure 3: ColoredMNIST using the Clip pretrained model + Linear Classifier. As we can see, our method is still the only one reaches to 70% accuracy, close to oracle performance (73%) with stable convergecne behaviour.
 
 ## 3. Waterbirds-CF
+Table 3: ColoredMNIST Results with both in-domain validation and oracle validation stopping criteria. We achieve near SoTA result.
+
 |               | Methods | In-domain validation & stopping criteria |              | Oracle validation & stopping criteria |              |
 |---------------|---------|------------------------------------------|--------------|---------------------------------------|--------------|
 |               |         | Test-Acc                                 | Ood Test-Acc | Test-Acc                              | Ood Test-Acc |
