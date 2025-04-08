@@ -11,7 +11,7 @@ Here we report the extra experiments.
 ## 1. PACS
 Table 1: Conditional pairs can be viewed as noisy counterfactual pairs. Using randomly generated conditional pairs, we achieve state-of-the-art (SoTA) performance on PACS with a pretrained CLIP (ViT-B/32) model and a linear classifier, evaluated using in-domain validation.
 
-|             | in-domain |           |           |           |           | oracle    |           |           |           |           |
+|             | In-domain validation & stopping criteria |           |           |           |           | Oracle validation & stopping criteria     |           |           |           |           |
 |-------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | test domain | A         | C         | P         | S         | Avg       | A         | C         | P         | S         | Avg       |
 | ERM         | 0.924     | 0.968     | **0.996** | 0.859     | 0.937     | 0.924     | 0.968     | **0.996** | 0.859     | 0.937     |
