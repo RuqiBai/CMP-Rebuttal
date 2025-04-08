@@ -13,7 +13,7 @@ Table 1: Conditional pairs can be viewed as noisy counterfactual pairs. Using ra
 
 ||In-domain validation & stopping criteria|||||Oracle validation & stopping criteria|||||
 |-|-|-|-|-|-|-|-|-|-|-|
-|testdomain|A|C|P|S|Avg|A|C|P|S|Avg|
+|test domain|A|C|P|S|Avg|A|C|P|S|Avg|
 |ERM|0.924|0.968|**0.996**|0.859|0.937|0.924|0.968|**0.996**|0.859|0.937|
 |IRM|0.938|0.976|**0.996**|0.840|0.938|0.941|0.976|**0.996**|0.845|0.940|
 |REx|0.953|0.963|0.993|0.836|0.936|0.953|0.975|**0.996**|0.845|0.942|
