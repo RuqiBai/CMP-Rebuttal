@@ -1,7 +1,8 @@
 Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymous link, we include additional results.
 # Report
 ## Our practical algorithm
-![CleanShot 2025-04-08 at 17 48 49@2x](https://github.com/user-attachments/assets/140f37b3-ae84-4e00-996a-bc95ccf2b4af)
+![CleanShot 2025-04-08 at 23 49 42@2x](https://github.com/user-attachments/assets/255776d9-284e-4fd8-9842-c4e1a2958168)
+
 
 
 
