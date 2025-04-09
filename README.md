@@ -6,7 +6,7 @@ Dear Reviewers, this is an anonymous Git Repo for CMP Rebuttal. In this anonymou
 
 
 
-Algorithm 1: Our practical algorithm uses Projected Gradient Descent (PGD) to constrain the model parameters to lie within the invariant subspace. This is achieved by projecting the parameters onto the orthogonal complement of the subspace spanned by the columns of the left singular vectors from the r-truncated Singular Value Decomposition (SVD) of the estimated counterfactual difference.
+Algorithm 1: Our practical algorithm uses reparameterization to learn the linear classifier that lie within the invariant subspace. This is achieved by projecting the parameters onto the orthogonal complement of the subspace spanned by the columns of the left singular vectors from the r-truncated Singular Value Decomposition (SVD) of the estimated counterfactual difference.
 Here we report the extra experiments.
 
 ## 1. PACS
